@@ -1,56 +1,98 @@
 @extends('backend_web.layouts.index')
 @section('content')
-<div class="pcoded-inner-content">
-    <!-- Main-body start -->
-    <div class="main-body">
-        <div class="page-wrapper" style="margin:20px">
-            <!-- Page-body start -->
-            <div class="page-body">
-                <div class="row">
-                    <!-- order-card start -->
-                    <div class="col-md-6 col-xl-3">
-                        <div class="card bg-c-blue order-card">
-                            <div class="card-block">
-                                <h6 class="m-b-20">Orders Received</h6>
-                                <h2 class="text-right"><i class="ti-shopping-cart f-left"></i><span>486</span></h2>
-                                <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+    <div class="main-content">
+        <section class="section">
+            <div class="row ">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-statistic-4">
+                            <div class="align-items-center justify-content-between">
+                                <div class="row ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                        <div class="card-content">
+                                            <h5 class="font-15">New Booking</h5>
+                                            <h2 class="mb-3 font-18">258</h2>
+                                            <p class="mb-0"><span class="col-green">10%</span> Increase</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                        <div class="banner-img">
+                                            <img src="assets/img/banner/1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="card bg-c-green order-card">
-                            <div class="card-block">
-                                <h6 class="m-b-20">Total Sales</h6>
-                                <h2 class="text-right"><i class="ti-tag f-left"></i><span>1641</span></h2>
-                                <p class="m-b-0">This Month<span class="f-right">213</span></p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-statistic-4">
+                            <div class="align-items-center justify-content-between">
+                                <div class="row ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                        <div class="card-content">
+                                            <h5 class="font-15"> Customers</h5>
+                                            <h2 class="mb-3 font-18">1,287</h2>
+                                            <p class="mb-0"><span class="col-orange">09%</span> Decrease</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                        <div class="banner-img">
+                                            <img src="assets/img/banner/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="card bg-c-yellow order-card">
-                            <div class="card-block">
-                                <h6 class="m-b-20">Revenue</h6>
-                                <h2 class="text-right"><i class="ti-reload f-left"></i><span>$42,562</span></h2>
-                                <p class="m-b-0">This Month<span class="f-right">$5,032</span></p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-statistic-4">
+                            <div class="align-items-center justify-content-between">
+                                <div class="row ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                        <div class="card-content">
+                                            <h5 class="font-15">New Project</h5>
+                                            <h2 class="mb-3 font-18">128</h2>
+                                            <p class="mb-0"><span class="col-green">18%</span>
+                                                Increase</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                        <div class="banner-img">
+                                            <img src="assets/img/banner/3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="card bg-c-pink order-card">
-                            <div class="card-block">
-                                <h6 class="m-b-20">Total Profit</h6>
-                                <h2 class="text-right"><i class="ti-wallet f-left"></i><span>$9,562</span></h2>
-                                <p class="m-b-0">This Month<span class="f-right">$542</span></p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-statistic-4">
+                            <div class="align-items-center justify-content-between">
+                                <div class="row ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                                        <div class="card-content">
+                                            <h5 class="font-15">Revenue</h5>
+                                            <h2 class="mb-3 font-18">$48,697</h2>
+                                            <p class="mb-0"><span class="col-green">42%</span> Increase</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                                        <div class="banner-img">
+                                            <img src="assets/img/banner/4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- order-card end -->
-
                 </div>
             </div>
-            <!-- Page-body end -->
-        </div>
-        <div id="styleSelector"> </div>
+        </section>
     </div>
-</div>
 @endsection

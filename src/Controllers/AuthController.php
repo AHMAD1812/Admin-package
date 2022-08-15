@@ -13,7 +13,7 @@ class AuthController extends Controller
      *
      * @return void
      */
-    public function admin_Login_Page()
+    public function login()
     {
         if (Auth::guard('admin')->user()) {
             return redirect()->route('admin-dashboard');
@@ -27,11 +27,11 @@ class AuthController extends Controller
      * @param Request $request
      * @return void
      */
-    public function admin_Login(Request $request)
+    public function loginProcess(Request $request)
     {
         if (Auth::guard('admin')->attempt($request->only('email', 'password'))) {
             if (Auth()->guard('admin')->check()) {
-                return redirect()->route('admin-dashboard');
+                return redirect()->route('admin_dashboard');
             } else {
                 return redirect()->back()->withErrors(['alert-danger' => "Permission Denied"]);
             }
@@ -49,6 +49,6 @@ class AuthController extends Controller
     {
         Auth::logout();
         $request->session()->invalidate();
-        return redirect()->route('AdminLogin');
+        return redirect()->route('admin_login');
     }
 }

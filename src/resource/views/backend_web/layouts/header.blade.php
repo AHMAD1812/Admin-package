@@ -1,7 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+
+<link rel="stylesheet" href="{{asset('assets/css/app.min.css')}}">
+<!-- Template CSS -->
+<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/components.css')}}">
+<!-- Custom style CSS -->
+<link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
+<link rel='shortcut icon' type='image/x-icon' href='{{asset('assets/img/favicon.ico')}}' />
+{{-- <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
 <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
 <meta name="author" content="codedthemes" />
 
@@ -21,6 +29,6 @@
 <!-- radial chart.css -->
 <link rel="stylesheet" href="../files/assets/pages/chart/radial/css/radial.css" type="text/css" media="all">
 <!-- Style.css -->
-<link rel="stylesheet" type="text/css" href="../files/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../files/assets/css/style.css"> --}}
 
 @yield('custom_head_links')

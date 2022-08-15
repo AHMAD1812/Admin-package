@@ -20,14 +20,15 @@ use App\Http\Controllers\AdminDashboardController;
 Route::get('/', function () {
     return redirect()->route('AdminLoginPage');
 });
-Route::get('/admin/login', [AuthController::class, 'admin_Login_Page'])->name('AdminLoginPage');
-Route::post('/admin/login', [AuthController::class, 'admin_Login'])->name('AdminLogin');
+Route::get('/admin/login', [AuthController::class, 'login'])->name('admin_login');
+Route::post('/admin/login', [AuthController::class, 'loginProcess'])->name('admin_login_process');
 
 Route::group(['middleware' => ['auth.admin']], function () {
 
     // logout Route
-    Route::get('/logout', [AuthController::class, 'logout'])->name('AdminLogout');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('admin_logout');
 
-    // Dashboard Route 
-    Route::get('/dashboard', [AdminDashboardController::class, 'dasboard'])->name('admin-dashboard');
+    // Dashboard Route
+    Route::get('/dashboard', [AdminDashboardController::class, 'dasboard'])->name('admin_dashboard');
 });
+

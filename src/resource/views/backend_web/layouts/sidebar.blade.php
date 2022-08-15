@@ -1,21 +1,26 @@
-<nav class="pcoded-navbar" style="background: #0f365e;margin-top: 27px;border-top-right-radius: 30px;">
-    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-    <div class="pcoded-inner-navbar main-menu">
-        <ul class="pcoded-item pcoded-left-item mt-2">
-            <li class="">
-                <a href="{{ route('admin-dashboard') }}">
-                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                    <span class="pcoded-mtext">DashBoard</span>
-                    <span class="pcoded-mcaret"></span>
-                </a>
+<div class="main-sidebar sidebar-style-2">
+    <aside id="sidebar-wrapper">
+        <div class="sidebar-brand">
+            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
+                    class="logo-name">PUPPE TEER</span>
+            </a>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="menu-header">Main</li>
+            <li class="dropdown active">
+                <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
-            <li class="">
-                <a href="{{ route('AdminLogout') }}">
-                    <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>N</b></span>
-                    <span class="pcoded-mtext">Logout</span>
-                    <span class="pcoded-mcaret"></span>
-                </a>
+            <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                        data-feather="briefcase"></i><span>Widgets</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="widget-chart.html">Chart Widgets</a></li>
+                    <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
+                </ul>
             </li>
+            {{-- <li><a class="nav-link" href="{{route('AdminLogout')}}">
+                <i data-feather="arrow-left"></i><span>Logout</span></a>
+            </li> --}}
         </ul>
-    </div>
-</nav>
+    </aside>
+</div>
